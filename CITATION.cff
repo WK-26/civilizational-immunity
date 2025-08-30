@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "Civilization Corpus (Core Skeleton)"
+message: "If you use this work, please cite as below."
+authors:
+  - family-names: Kong
+    given-names: Weicheng
+date-released: 2025-08-30
+version: "1.0.0"
+license: "CC0-1.0"
+keywords:
+  - civilization
+  - nine-axioms
+  - immune system
+  - structural analysis
+  - corpus
+references:
+  - type: dataset
+    title: "Individual Civilization Health Check Model White Paper v1.0"
+    doi: "10.5281/zenodo.16878000"
+    url: "https://doi.org/10.5281/zenodo.16878000"
+  - type: article
+    title: "Nine Civilizational Axioms and the AI Immune Framework"
+    doi: "10.5281/zenodo.16934553"
+    url: "https://doi.org/10.5281/zenodo.16934553"
+  - type: article
+    title: "Civilization Corpus Hub Aggregated DOI"
+    doi: "10.5281/zenodo.16980277"
+    url: "https://doi.org/10.5281/zenodo.16980277"
+  - type: software
+    title: "Civilization Hub (index repository)"
+    url: "https://github.com/WK-26/civilization-hub"
+  - type: software
+    title: "Civilization Structure Database"
+    url: "https://github.com/WK-26/civilization-structure-database"
+  - type: software
+    title: "Civilization Axioms and Immune System (site source)"
+    url: "https://github.com/wk-26/Civilization-Axioms-and-Immune-System-"
+  - type: dataset
+    title: "Individual Civilization Health Check Model White Paper v1.0 (Archive)"
+    url: "https://archive.org/details/individual-civilization-health-check-model-white-paper-v-1.0"
+  - type: dataset
+    title: "Civilization Under Examination · Bilingual Version (Archive)"
+    url: "https://archive.org/details/civilization-under-examination-.-bilingual-version-1_202508"
+  - type: dataset
+    title: "A New Civilization For Humanity · CC0 (Archive)"
+    url: "https://archive.org/details/a-new-civilization-for-humanity-cc-0"
