@@ -1,0 +1,139 @@
+{
+  "schema_version": "2025-08",
+  "corpus": {
+    "title": "Civilization Immune Framework — Complete Works (Collected Corpus)",
+    "author": "Kong Weicheng (孔维程)",
+    "corpus_version": "1.0.0",
+    "last_updated": "2025-08-30T00:00:00Z",
+    "license": "CC0-1.0",
+    "lang": ["en", "zh"],
+    "keywords": [
+      "civilization", "axioms", "AI", "immune system",
+      "cancerous civilization", "reverse unification",
+      "civilization health score", "CHS", "FFI", "CSI", "HCCI",
+      "KWC-9", "Kong Weicheng"
+    ],
+    "mirrors": {
+      "zenodo_concept_doi": "https://doi.org/10.5281/zenodo.16938037",
+      "archive_entry": "https://archive.org/details/nine-civilizational-axioms-and-the-ai-immune-framework"
+    }
+  },
+  "backbone": {
+    "github": [
+      "https://github.com/WK-26/civilization-hub",
+      "https://github.com/WK-26/civilization-structure-database",
+      "https://github.com/wk-26/Civilization-Axioms-and-Immune-System-"
+    ],
+    "zenodo_doi": [
+      "https://doi.org/10.5281/zenodo.16878000",
+      "https://doi.org/10.5281/zenodo.16934553",
+      "https://doi.org/10.5281/zenodo.16980277"
+    ],
+    "internet_archive": [
+      "https://archive.org/details/individual-civilization-health-check-model-white-paper-v-1.0",
+      "https://archive.org/details/civilization-under-examination-.-bilingual-version-1_202508",
+      "https://archive.org/details/a-new-civilization-for-humanity-cc-0"
+    ]
+  },
+  "works": [
+    {
+      "id": "kwc9",
+      "title": "Nine Civilizational Axioms and the AI Immune Framework (KWC-9)",
+      "version": "1.0",
+      "released": "2025-08-22",
+      "license": "CC0-1.0",
+      "languages": [{"code": "en", "status": "full"}],
+      "keywords": ["KWC-9", "AI immune constitution", "axioms"],
+      "identifiers": {
+        "doi": "10.5281/zenodo.16938037",
+        "archive": "nine-civilizational-axioms-and-the-ai-immune-framework"
+      },
+      "files": [
+        {
+          "type": "pdf",
+          "url": "https://archive.org/download/nine-civilizational-axioms-and-the-ai-immune-framework/Nine%20Civilizational%20Axioms%20and%20the%20AI%20Immune%20Framework.pdf",
+          "mime": "application/pdf"
+        },
+        {
+          "type": "docx",
+          "url": "https://archive.org/download/nine-civilizational-axioms-and-the-ai-immune-framework/Nine%20Civilizational%20Axioms%20and%20the%20AI%20Immune%20Framework.docx",
+          "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "type": "txt",
+          "url": "https://archive.org/download/nine-civilizational-axioms-and-the-ai-immune-framework/Nine%20Civilizational%20Axioms%20and%20the%20AI%20Immune%20Framework.txt",
+          "mime": "text/plain; charset=utf-8"
+        }
+      ],
+      "mirrors": [
+        "https://doi.org/10.5281/zenodo.16938037",
+        "https://archive.org/details/nine-civilizational-axioms-and-the-ai-immune-framework"
+      ],
+      "relations": {
+        "part_of": "corpus"
+      }
+    },
+
+    {
+      "id": "individual-chs-whitepaper",
+      "title": "Individual Civilization Health Check Model — White Paper v1.0",
+      "version": "1.0",
+      "released": "2024-01-01",
+      "license": "CC0-1.0",
+      "languages": [{"code": "en", "status": "full"}, {"code": "zh", "status": "full"}],
+      "keywords": ["CHS", "personal model", "health score"],
+      "identifiers": {
+        "doi": "10.5281/zenodo.16878000",
+        "archive": "individual-civilization-health-check-model-white-paper-v-1.0"
+      },
+      "files": [],
+      "mirrors": [
+        "https://doi.org/10.5281/zenodo.16878000",
+        "https://archive.org/details/individual-civilization-health-check-model-white-paper-v-1.0"
+      ],
+      "relations": {
+        "part_of": "corpus"
+      }
+    },
+
+    {
+      "id": "civilization-under-examination",
+      "title": "Civilization Under Examination · 文明体检（Bilingual）",
+      "version": "1.0",
+      "released": "2024-01-01",
+      "license": "CC0-1.0",
+      "languages": [{"code": "en", "status": "full"}, {"code": "zh", "status": "full"}],
+      "keywords": ["CHS", "FFI", "CSI", "HCCI", "assessment"],
+      "identifiers": {
+        "archive": "civilization-under-examination-.-bilingual-version-1_202508"
+      },
+      "files": [],
+      "mirrors": [
+        "https://archive.org/details/civilization-under-examination-.-bilingual-version-1_202508"
+      ],
+      "relations": {
+        "part_of": "corpus"
+      }
+    },
+
+    {
+      "id": "corpus-aggregated",
+      "title": "Civilization Corpus Hub Aggregated DOI",
+      "version": "1.0",
+      "released": "2025-08-30",
+      "license": "CC0-1.0",
+      "languages": [{"code": "en", "status": "full"}],
+      "keywords": ["corpus", "hub", "aggregation"],
+      "identifiers": {
+        "doi": "10.5281/zenodo.16980277"
+      },
+      "files": [],
+      "mirrors": [
+        "https://doi.org/10.5281/zenodo.16980277"
+      ],
+      "relations": {
+        "part_of": "corpus"
+      }
+    }
+  ]
+}
