@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Civilization Health and Cancer Structure Scoring System v1.0 — White Paper</title>
+  <meta name="author" content="Kong Weicheng (孔维程)">
+  <meta name="license" content="CC0 1.0 (Public Domain Dedication)">
+  <meta name="description" content="CHCSS: CHS / RUI / HCCI, 105 Indicators, and Case Studies (China, USA, Russia, Sweden).">
+  <style>
+    :root { --fg:#16181b; --bg:#ffffff; --muted:#666; --rule:#e5e5e5; --accent:#0b5fff; }
+    @media (prefers-color-scheme: dark){
+      :root { --fg:#e9e9e9; --bg:#0f1115; --muted:#a0a0a0; --rule:#2a2d34; --accent:#8ab4ff; }
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+    main{max-width:980px;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+    h1{font-size:clamp(1.7rem,3.4vw,2.3rem);margin:.2rem 0 .6rem}
+    h2{font-size:clamp(1.25rem,2.6vw,1.7rem);margin:2rem 0 .4rem}
+    h3{font-size:clamp(1.05rem,2.1vw,1.25rem);margin:1.35rem 0 .25rem}
+    p{margin:.7rem 0}
+    ul,ol{margin:.35rem 0 .7rem 1.25rem}
+    li{margin:.15rem 0}
+    hr{border:0;border-top:1px solid var(--rule);margin:1.6rem 0}
+    .badge{display:inline-block;padding:.12rem .5rem;border:1px solid var(--rule);border-radius:.4rem;color:var(--muted);font-size:.85rem}
+    .meta{display:grid;grid-template-columns:140px 1fr;gap:.25rem 1rem;margin:.4rem 0 0}
+    .note{color:var(--muted);font-size:.95rem}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    nav.toc{border:1px solid var(--rule);border-radius:.5rem;padding:.75rem 1rem;background:color-mix(in oklab,var(--rule) 8%,transparent);margin:1rem 0 1.25rem}
+    nav.toc ul{margin:.25rem 0 .25rem 1.25rem}
+    table{width:100%;border-collapse:collapse;margin:1rem 0}
+    th,td{border:1px solid var(--rule);padding:.55rem .6rem;vertical-align:top}
+    th{background:color-mix(in oklab, var(--rule) 18%, transparent);text-align:left}
+    code,kbd,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    footer{margin-top:2rem;color:var(--muted);font-size:.92rem}
+  </style>
+  <!-- MathJax for formulas -->
+  <script>
+    MathJax = { tex: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$']]} };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Civilization Health and Cancer Structure Scoring System v1.0 — White Paper</h1>
+  <p class="note">Including CHS / RUI / HCCI, 105 Indicators, and Case Studies: China — USA — Russia — Sweden</p>
+
+  <div class="meta">
+    <div>Author</div><div><strong>Kong Weicheng (孔维程)</strong></div>
+    <div>Affiliation</div><div>Independent Researcher; Founder of Civilization Immune Theory</div>
+    <div>Date</div><div>2025</div>
+    <div>License</div><div><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="license noopener">CC0 1.0 — Public Domain Dedication</a></div>
+  </div>
+  <p class="badge">Version v1.0</p>
+
+  <h3>Mirrors</h3>
+  <ul>
+    <li>GitHub: <a href="https://github.com/your-repo">https://github.com/your-repo</a></li>
+    <li>Zenodo: <a href="https://zenodo.org/record/xxxx">https://zenodo.org/record/xxxx</a></li>
+    <li>Archive.org: <a href="https://archive.org/details/xxxx">https://archive.org/details/xxxx</a></li>
+  </ul>
+</header>
+
+<hr>
+
+<nav class="toc">
+  <strong>Table of Contents</strong>
+  <ul>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#keywords">Keywords</a></li>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#part1">Part I — Conceptual Framework</a></li>
+    <li><a href="#part2">Part II — Indicator Framework (105 Metrics)</a></li>
+    <li><a href="#part3">Part III — Scoring Methodology</a></li>
+    <li><a href="#part4">Part IV — Civilization Cancer Staging Model</a></li>
+    <li><a href="#part5">Part V — Global Scoring (Illustrative)</a></li>
+    <li><a href="#part6">Part VI — Key Insights and Warnings</a></li>
+    <li><a href="#part7">Part VII — Roadmap for Civilization Immunity</a></li>
+    <li><a href="#part8">Part VIII — Methodological Notes and Limitations</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#appendix-a">Appendix A — Case Studies</a></li>
+    <li><a href="#appendix-b">Appendix B — 105 Indicators</a></li>
+  </ul>
+</nav>
+
+<section id="abstract">
+  <h2>Abstract</h2>
+  <p>This white paper introduces the <em>Civilization Health and Cancer Structure Scoring System (CHCSS)</em>, a quantitative framework for diagnosing the structural health of civilizations. It defines five key indices — <strong>FFI</strong> (Functional Fabric Index), <strong>CSI</strong> (Cancerous Structure Index), <strong>CHS</strong> (Civilization Health Score), <strong>RUI</strong> (Reverse Unification Index), and <strong>HCCI</strong> (Human Civilization Contribution Index) — to assess whether a civilization functions healthily, exhibits cancerous traits, or exports structural risks globally.</p>
+  <p>The framework provides the foundation for the <em>Reverse Unification Theory</em>, offering a structural explanation of how cancerous civilizations expand and how healthy civilizations sustain resilience. Case studies (China, USA, Russia, Sweden) illustrate the diagnostic model in practice, revealing contrasting structural profiles and their implications for global civilization health.</p>
+</section>
+
+<section id="keywords">
+  <h2>Keywords</h2>
+  <p>Civilization, Cancerous Structure, Reverse Unification, Immunity, CHS, RUI, HCCI, Kong Weicheng</p>
+</section>
+
+<section id="preface">
+  <h2>Preface</h2>
+  <p>In the 21st century, competition among civilizations is no longer limited to GDP, military power, or technological accumulation. The true battleground lies in the structural health of a civilization:</p>
+  <ul>
+    <li>Does it protect individual freedom and dignity?</li>
+    <li>Can it distribute resources fairly and effectively?</li>
+    <li>Does it have self-correcting mechanisms and resilience against structural “cancer”?</li>
+  </ul>
+  <p>The ability of a civilization to remain structurally healthy determines not only its sustainability but also whether it will export its pathologies and infect the global order.</p>
+
+  <p>This white paper introduces a quantitative diagnostic framework to evaluate civilizations:</p>
+  <ul>
+    <li><strong>FFI (Functional Fabric Index):</strong> Measures the positive, healthy functions of a civilization.</li>
+    <li><strong>CSI (Cancerous Structure Index):</strong> Measures the extent of structural “cancer” — traits that erode freedom, diversity, and innovation.</li>
+    <li><strong>CHS (Civilization Health Score):</strong> The net difference between FFI and CSI, representing the overall health level of a civilization.</li>
+    <li><strong>RUI (Reverse Unification Index):</strong> Assesses the extent to which a civilization exports its negative structures and assimilates others.</li>
+    <li><strong>HCCI (Human Civilization Contribution Index):</strong> Defined as $$ HCCI = \frac{CHS \times RUI}{100} $$ , quantifying whether a civilization is a net contributor or net threat to humanity.</li>
+  </ul>
+
+  <p>This framework provides a quantitative foundation for the “Reverse Unification Theory of Chinese Civilization”:</p>
+  <ul>
+    <li>When a civilization has $CHS &lt; 0$ but $RUI &gt; 50$, it is not only structurally “cancerous” internally but is also actively exporting those pathologies outward.</li>
+  </ul>
+
+  <p>In the appendices (A1, A2, A3, A4), we apply this scoring model to China, the United States, Russia, and Sweden to reveal contrasting structural profiles.</p>
+</section>
+
+<section id="part1">
+  <h2>Part I: Conceptual Framework</h2>
+
+  <h3>1.1 Five Core Indices</h3>
+  <ol>
+    <li><strong>FFI — Functional Fabric Index</strong><br>
+      Measures the positive functional structures of a civilization (freedom, equality, creativity, cooperation, self-correction). The higher the FFI, the more “healthy cells” a civilization has.
+    </li>
+    <li><strong>CSI — Cancerous Structure Index</strong><br>
+      Measures negative structural traits (information control, centralized power, emotional coercion, oligarchic monopolies, structural colonization). The higher the CSI, the more “cancerous factors” dominate.
+    </li>
+    <li><strong>CHS — Civilization Health Score</strong><br>
+      Overall net health score:
+      <div>$$ CHS = \frac{1}{7}\sum_{i=1}^{7}\big( FFI_i - CSI_i \big) $$</div>
+      Interpretation: $CHS &gt; 0$ indicates structural health; $CHS &lt; 0$ indicates systemic cancerization.
+    </li>
+    <li><strong>RUI — Reverse Unification Index</strong><br>
+      Measures the external assimilation power of cancerous structures:
+      <div>$$ RUI = \overline{CSI} \times EOI $$</div>
+      where $\overline{CSI}$ is the average CSI across systems (0–100) and $EOI \in [0,1]$ captures the external reach of capital, technology, discourse, and platforms.
+    </li>
+    <li><strong>HCCI — Human Civilization Contribution Index</strong><br>
+      Measures net global contribution (or harm):
+      <div>$$ HCCI = \frac{CHS \times RUI}{100} $$</div>
+      Meaning: $HCCI &gt; 0$ → net contributor; $HCCI &lt; 0$ → net destructor (“structural tumor”).
+    </li>
+  </ol>
+
+  <h3>1.2 The Seven Civilization Systems</h3>
+  <p>(Analogous to the seven vital systems of the human body)</p>
+  <ol>
+    <li><strong>Information–Neural System:</strong> Freedom of thought, speech, and media; transparency of information.</li>
+    <li><strong>Resource Circulation System:</strong> Property rights, fair opportunity, wealth distribution, and open markets.</li>
+    <li><strong>Cultural Absorption System:</strong> Openness to new ideas, cross-civilizational exchange, and translation of knowledge.</li>
+    <li><strong>Birth &amp; Transmission System:</strong> Family structure, generational mobility, and protection of individual dignity.</li>
+    <li><strong>Legal &amp; Institutional Framework:</strong> Judicial independence, checks and balances, procedural justice.</li>
+    <li><strong>Human Values &amp; Orientation:</strong> Freedom, dignity, creativity, happiness, and inclusiveness.</li>
+    <li><strong>Immune System:</strong> Risk recognition, societal self-correction, external defense, and global cooperation.</li>
+  </ol>
+</section>
+
+<section id="part2">
+  <h2>Part II: Indicator Framework (105 Metrics)</h2>
+  <p>Each civilization system is assessed using 10 FFI (positive) indicators and 5 CSI (negative) indicators, resulting in a total of $7 \times (10+5) = 105$ metrics.</p>
+  <p>All indicators are scored on a 0–5 scale:</p>
+  <ul>
+    <li>0 = Extremely poor performance</li>
+    <li>5 = Best performance</li>
+  </ul>
+  <p>Maximum score per system:</p>
+  <ul>
+    <li>FFI = 50 points (10 × 5)</li>
+    <li>CSI = 25 points (5 × 5)</li>
+  </ul>
+  <p>The complete list of 105 indicators is provided in Appendix B (Tables B-1 to B-7). This section briefly summarizes representative indicators of each system; detailed explanations are in Appendix B.</p>
+</section>
+
+<section id="part3">
+  <h2>Part III: Scoring Methodology</h2>
+
+  <h3>3.1 Single System Score (Normalized to 0–100)</h3>
+  <p>
+    $$
+    FFI_{\text{system}} = \frac{\sum_{j=1}^{10} Score_{FFI,j}}{50} \times 100
+    \qquad
+    CSI_{\text{system}} = \frac{\sum_{j=1}^{5} Score_{CSI,j}}{25} \times 100
+    $$
+  </p>
+
+  <h3>3.2 Civilization Health Score (CHS)</h3>
+  <p>
+    $$
+    CHS = \frac{1}{7}\sum_{i=1}^{7} (FFI_i - CSI_i)
+    $$
+  </p>
+  <ul>
+    <li>$CHS &gt; 0$: the civilization is structurally healthy.</li>
+    <li>$CHS &lt; 0$: the civilization is cancerized (structural pathologies dominate).</li>
+  </ul>
+
+  <h3>3.3 Reverse Unification Index (RUI)</h3>
+  <p>
+    $$
+    RUI = \overline{CSI} \times EOI
+    $$
+  </p>
+  <p>Where $\overline{CSI}$ is the average CSI across all 7 systems (0–100), and $EOI$ (External Output Index) is a 0–1 measure of external influence (capital, technology, narrative, platform reach).</p>
+
+  <h3>3.4 Human Civilization Contribution Index (HCCI)</h3>
+  <p>
+    $$
+    HCCI = \frac{CHS \times RUI}{100}
+    $$
+  </p>
+  <ul>
+    <li>$HCCI &gt; 0$: net contributor to global human progress.</li>
+    <li>$HCCI &lt; 0$: net destructor (“structural tumor”).</li>
+  </ul>
+</section>
+
+<section id="part4">
+  <h2>Part IV: Civilization Cancer Staging Model</h2>
+  <p>This model identifies stages of structural cancerization based on CSI levels.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>CSI Range</th>
+        <th>Structural Features</th>
+        <th>Typical Risks</th>
+        <th>Suggested Interventions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Latent</td>
+        <td>0.2 &lt; CSI ≤ 0.4</td>
+        <td>Localized cancer-like structures; early infiltration</td>
+        <td>Information/education narrowing; media capture</td>
+        <td>Media independence; open education; transparency</td>
+      </tr>
+      <tr>
+        <td>Linked Cancerization</td>
+        <td>0.4 &lt; CSI ≤ 0.6</td>
+        <td>Multi-system linkage of cancerous traits</td>
+        <td>Power concentration; legal/fiscal manipulation</td>
+        <td>Judicial independence; fiscal transparency; anti-corruption</td>
+      </tr>
+      <tr>
+        <td>Metastasis</td>
+        <td>0.6 &lt; CSI &lt; 0.8</td>
+        <td>External structural export; high RUI (&gt; 30)</td>
+        <td>Cultural/capital infiltration; dependency chains</td>
+        <td>Global civilizational immune collaboration; dependency reduction</td>
+      </tr>
+      <tr>
+        <td>Collapse</td>
+        <td>CSI ≥ 0.8</td>
+        <td>Systemic failure</td>
+        <td>Innovation collapse; social trust breakdown; demographic/ecological imbalance; authoritarian emergency</td>
+        <td>Re-building; de-structuralization; democratic safeguards</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="note">Note: When $CHS &lt; 0$ and $RUI &gt; 50$, the civilization is classified as a “high-cancer + high-outflow global risk entity.”</p>
+</section>
+
+<section id="part5">
+  <h2>Part V: Global Scoring (Illustrative Version)</h2>
+  <p>The following table provides demonstrative scores for selected representative civilizations. These results are for methodological illustration only and not official annual ratings. Formal reports will be based on verified public data, third-party indices, and transparent audit methods.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Country</th><th>FFI</th><th>CSI</th><th>CHS</th><th>EOI</th><th>RUI</th><th>HCCI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>China</td><td>30</td><td>75</td><td>-45</td><td>0.8</td><td>60.0</td><td>-27.0</td></tr>
+      <tr><td>USA</td><td>80</td><td>35</td><td>45</td><td>0.7</td><td>24.5</td><td>11.0</td></tr>
+      <tr><td>Sweden</td><td>88</td><td>8</td><td>80</td><td>0.3</td><td>2.4</td><td>1.9</td></tr>
+      <tr><td>Japan</td><td>70</td><td>25</td><td>45</td><td>0.5</td><td>12.5</td><td>5.6</td></tr>
+      <tr><td>Germany</td><td>85</td><td>15</td><td>70</td><td>0.6</td><td>9.0</td><td>6.3</td></tr>
+      <tr><td>India</td><td>55</td><td>40</td><td>15</td><td>0.4</td><td>16.0</td><td>2.4</td></tr>
+      <tr><td>Russia</td><td>40</td><td>60</td><td>-20</td><td>0.7</td><td>42.0</td><td>-8.4</td></tr>
+      <tr><td>Brazil</td><td>60</td><td>30</td><td>30</td><td>0.5</td><td>15.0</td><td>4.5</td></tr>
+      <tr><td>France</td><td>83</td><td>12</td><td>71</td><td>0.6</td><td>7.2</td><td>5.1</td></tr>
+      <tr><td>South Africa</td><td>50</td><td>45</td><td>5</td><td>0.4</td><td>18.0</td><td>0.9</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Key Takeaways (Summary)</h3>
+  <ul>
+    <li><strong>China:</strong> CHS is negative and RUI is extremely high, resulting in a negative HCCI. It represents a typical case of “reverse unification” risk (see Appendix A1).</li>
+    <li><strong>United States:</strong> CHS is positive, RUI is relatively high, and HCCI is positive. It remains a “net contributor” to global civilization, though algorithmic polarization and corporate monopolies require caution (see Appendix A2).</li>
+    <li><strong>Russia:</strong> CHS is negative and RUI is high, producing a negative HCCI. It is characterized as a “hard conflict–type exporter” (see Appendix A3).</li>
+    <li><strong>Sweden:</strong> CHS is high while RUI is low, making it a “silent positive contributor” (see Appendix A4).</li>
+  </ul>
+</section>
+
+<section id="part6">
+  <h2>Part VI: Key Insights and Warnings</h2>
+  <ol>
+    <li><strong>Influence ≠ Positive Contribution</strong><br>
+      A civilization can be powerful yet still be a net negative contributor ($HCCI &lt; 0$). Separating “influence” from “civilizational quality” is precisely what $RUI + CHS$ aims to achieve.
+    </li>
+    <li><strong>Reverse Unification as a Structural Disease</strong><br>
+      When a civilization is highly cancerized ($CHS &lt; 0$) and has high $RUI$, it tends to export its control structures globally — via capital, technology, platforms, and discourse. Free civilizations must develop a “civilizational immune system” to detect and counter such infiltration (see Part VII).
+    </li>
+    <li><strong>Vulnerabilities of the Free World</strong><br>
+      Open societies are more permeable to infiltration due to transparency and pluralism. A structural “firewall” is needed — covering transparent supply chains, discourse independence, platform governance, and cross-national legal cooperation.
+    </li>
+  </ol>
+</section>
+
+<section id="part7">
+  <h2>Part VII: Roadmap for Civilization Immunity</h2>
+
+  <h3>7.1 Internal Actions (Raising CHS)</h3>
+  <ul>
+    <li><strong>Information–Neural System:</strong> Algorithmic transparency, independent media, open data.</li>
+    <li><strong>Institutional Framework:</strong> Judicial independence, regular accountability, anti-corruption mechanisms.</li>
+    <li><strong>Birth &amp; Transmission:</strong> Eliminate bloodline-based oppression, end emotional coercion, protect children’s and women’s rights.</li>
+    <li><strong>Immune System:</strong> Transparent crisis response, societal self-correction mechanisms, cross-disciplinary expert involvement in decision-making.</li>
+  </ul>
+
+  <h3>7.2 External Actions (Suppressing RUI)</h3>
+  <ul>
+    <li><strong>Anti-structural colonialism rules:</strong> Impose transparency and rule-of-law constraints on capital and technology with “structural control overflow.”</li>
+    <li><strong>Civilizational Immunity Alliance:</strong> Share intelligence among free civilizations, collaborate legally, and mutually recognize technology standards.</li>
+    <li><strong>Platform Governance &amp; Discourse Defense:</strong> Identify and filter external attempts at information manipulation and ideological infiltration.</li>
+  </ul>
+
+  <h3>7.3 Immunity in the AI Era</h3>
+  <ul>
+    <li>AI is not neutral: It must be embedded with “civilizational immune principles” to prevent becoming a carrier of structural cancer.</li>
+    <li><strong>AI Transparency &amp; Alignment:</strong> Ensure AI systems uphold freedom, human rights, dignity, and creativity as core values.</li>
+  </ul>
+</section>
+
+<section id="part8">
+  <h2>Part VIII: Methodological Notes and Limitations</h2>
+  <ol>
+    <li><strong>Data Availability Gaps:</strong> Authoritarian regimes often lack transparent data or manipulate statistics. Multi-source cross-validation is required.</li>
+    <li><strong>Weight Adjustments:</strong> System and indicator weights can be fine-tuned using machine learning, expert panels, and Delphi methods.</li>
+    <li><strong>Temporal Dynamics:</strong> Observe $\frac{dFFI}{dt}$ and $\frac{dCSI}{dt}$ — rates of change — rather than static scores alone.</li>
+    <li><strong>Multi-Scale Adaptability:</strong> The model can be expanded to nations, platforms, organizations, and families, identifying structural resonance across levels.</li>
+    <li><strong>Philosophical Boundary of HCCI:</strong> While HCCI quantifies contribution vs. harm, value hierarchies (e.g., freedom, dignity) require human consensus.</li>
+  </ol>
+</section>
+
+<section id="conclusion">
+  <h2>Conclusion</h2>
+  <p>Civilizational health is not an accident of history — it is the result of a continuous battle between structure and immunity.</p>
+  <ul>
+    <li>If we fail to identify cancerous structures, we will ultimately be consumed by them.</li>
+    <li>If we fail to build a civilizational immune system, freedom itself will become a luxury.</li>
+  </ul>
+  <p>The CHS / RUI / HCCI framework in this white paper aims to offer a clear, quantifiable, and actionable tool for the global community to understand: Who contributes to civilization? Who corrodes it? And how can we rebuild and save ourselves?</p>
+</section>
+
+<section id="appendix-a">
+  <h2>Appendix A: Case Studies</h2>
+
+  <h3>A1: China — A Typical Case of Reverse Unification</h3>
+  <p><strong>Core Results:</strong> FFI = 30, CSI = 75, CHS = -45 (high internal cancerization); EOI = 0.8, RUI = 60.0 (strong structural outflow); HCCI = -27.0 (net negative contribution).</p>
+  <p><strong>Key Structural Characteristics:</strong></p>
+  <ol>
+    <li><strong>Information–Neural System:</strong> Comprehensive censorship; algorithmic manipulation; criminalization of speech (e.g., Great Firewall, keyword blocking).</li>
+    <li><strong>Resource Circulation System:</strong> State-owned enterprise dominance; opaque fiscal mechanisms; high corruption risk.</li>
+    <li><strong>Cultural Absorption System:</strong> Extensive content bans; ideological filtering of books/films; distortion of history for nationalism.</li>
+    <li><strong>Birth &amp; Transmission System:</strong> Emotional coercion (filial piety as control); gender inequality; marriage market commodification.</li>
+    <li><strong>Legal &amp; Institutional Framework:</strong> Judiciary under political control; selective enforcement; legal tools for regime stability.</li>
+    <li><strong>Human Values &amp; Orientation:</strong> Collectivist dominance over individual rights; forced value conformity; marginalization of minorities.</li>
+    <li><strong>Immune System:</strong> Weak NGO space; suppression of whistleblowers; external projection of control structures.</li>
+  </ol>
+  <p><strong>Conclusion:</strong> High-cancer + high-outflow civilization; internal control structures exported via platforms, technology, and dependency chains.</p>
+
+  <h3>A2: United States — A Positive Contributor with Internal Fractures</h3>
+  <p><strong>Core Results:</strong> FFI = 80, CSI = 35, CHS = 45; EOI = 0.7, RUI = 24.5; HCCI = 11.0.</p>
+  <p><strong>Key Structural Characteristics:</strong> Strong press freedom and information diversity with algorithmic polarization; market freedom with inequality; robust separation of powers with political polarization; dynamic civil society vulnerable to foreign disinformation.</p>
+  <p><strong>Conclusion:</strong> Net positive contributor; watch for polarization and platform manipulation risks.</p>
+
+  <h3>A3: Russia — Hard Power Expansion &amp; Negative Contribution</h3>
+  <p><strong>Core Results:</strong> FFI = 40, CSI = 60, CHS = -20; EOI = 0.7, RUI = 42.0; HCCI = -8.4.</p>
+  <p><strong>Key Structural Characteristics:</strong> Heavy state media control; oligarchic resource economy; limited cultural openness; weak social mobility; non-independent judiciary; nationalism over individual rights; militarized responses.</p>
+  <p><strong>Conclusion:</strong> Negative contribution driven by hard power expansion and structural inflexibility; contrasts with China’s softer “reverse unification.”</p>
+
+  <h3>A4: Sweden — Silent Positive Contributor</h3>
+  <p><strong>Core Results:</strong> FFI = 90, CSI = 20, CHS = 70; EOI = 0.4, RUI = 8.0; HCCI = 5.6.</p>
+  <p><strong>Key Structural Characteristics:</strong> Top press freedom; fair wealth distribution; transparent governance; multicultural openness; progressive family laws; strong rule of law; high happiness and inclusivity; effective crisis management.</p>
+  <p><strong>Conclusion:</strong> Strong CHS with low RUI — a “quietly positive” contributor.</p>
+</section>
+
+<section id="appendix-b">
+  <h2>Appendix B: 105 Indicators</h2>
+  <p>The full set of indicators is summarized below. Each civilization system has ten FFI (positive) indicators and five CSI (cancerous) indicators.</p>
+
+  <h3>B-1: Information–Neural System</h3>
+  <p><em>FFI (Positive Indicators):</em></p>
+  <ol>
+    <li>Press freedom index (media independence).</li>
+    <li>Diversity of media and public discourse.</li>
+    <li>Open access to government data.</li>
+    <li>Public information accessibility.</li>
+    <li>Algorithmic transparency and explainability.</li>
+    <li>Freedom of independent investigative journalism.</li>
+    <li>Existence and strength of fact-checking mechanisms.</li>
+    <li>Legal protection for whistleblowers.</li>
+    <li>Internet and digital diversity (uncensored platforms).</li>
+    <li>Citizen access to uncensored global information.</li>
+  </ol>
+  <p><em>CSI (Cancerous Indicators):</em></p>
+  <ol>
+    <li>Volume of keyword censorship and blocked terms.</li>
+    <li>Scope of internet firewalling or platform bans.</li>
+    <li>Criminalized speech cases (arrests for opinions).</li>
+    <li>Algorithmic manipulation for political or social control.</li>
+    <li>Level of cross-border information blockade.</li>
+  </ol>
+
+  <h3>B-2: Resource Circulation System</h3>
+  <p><em>FFI (Positive Indicators):</em></p>
+  <ol>
+    <li>Strength of property rights protection.</li>
+    <li>Market competition and openness index.</li>
+    <li>Transparency of public fiscal data.</li>
+    <li>Equality of access to quality education.</li>
+    <li>Accessibility and quality of healthcare.</li>
+    <li>Entrepreneurship environment (ease of starting businesses).</li>
+    <li>Fairness of wealth distribution (low Gini coefficient).</li>
+    <li>Accessibility of public infrastructure.</li>
+    <li>Efficiency of ecological resource use and sustainability.</li>
+    <li>Transparency and fairness of the tax system.</li>
+  </ol>
+  <p><em>CSI (Cancerous Indicators):</em></p>
+  <ol>
+    <li>Degree of resource or industry monopoly.</li>
+    <li>Prevalence of grey/black market activities.</li>
+    <li>Concentration of wealth in family/oligarch networks.</li>
+    <li>Corruption and rent-seeking in taxation.</li>
+    <li>Share of unaccounted “black-box” fiscal funds.</li>
+  </ol>
+
+  <h3>B-3: Cultural Absorption System</h3>
+  <p><em>FFI (Positive Indicators):</em></p>
+  <ol>
+    <li>Openness to diverse cultural expressions.</li>
+    <li>Freedom of international academic collaboration.</li>
+    <li>Accessibility to global media and literature.</li>
+    <li>Freedom of translation and publication.</li>
+    <li>Integration of global history perspectives in education.</li>
+    <li>Tolerance of multiculturalism.</li>
+    <li>Investment in knowledge-sharing platforms.</li>
+    <li>Freedom to participate in international conferences.</li>
+    <li>Cross-border innovation collaboration.</li>
+    <li>Protection of minority and indigenous cultures.</li>
+  </ol>
+  <p><em>CSI (Cancerous Indicators):</em></p>
+  <ol>
+    <li>Number of banned books, films, and digital platforms.</li>
+    <li>Degree of cultural or ideological censorship.</li>
+    <li>Distortion or politicization of historical narratives.</li>
+    <li>Level of cultural nationalism or chauvinism.</li>
+    <li>Demonization or suppression of foreign ideas.</li>
+  </ol>
+
+  <h3>B-4: Birth &amp; Transmission System</h3>
+  <p><em>FFI (Positive Indicators):</em></p>
+  <ol>
+    <li>Freedom of marriage and partnership.</li>
+    <li>Gender equality in law and practice.</li>
+    <li>Strength of child protection laws.</li>
+    <li>Quality and coverage of sexual education.</li>
+    <li>Freedom to choose reproductive options.</li>
+    <li>Enforcement of anti-domestic violence measures.</li>
+    <li>Recognition of non-traditional families.</li>
+    <li>Quality and accessibility of public childcare.</li>
+    <li>Intergenerational social mobility.</li>
+    <li>Psychological support for children and youth.</li>
+  </ol>
+  <p><em>CSI (Cancerous Indicators):</em></p>
+  <ol>
+    <li>Forced birth or sterilization policies.</li>
+    <li>Emotional coercion or filial piety as structural control.</li>
+    <li>Prevalence of domestic violence and harsh parenting.</li>
+    <li>Marriage as marketized transaction (e.g., dowry).</li>
+    <li>Systemic gender discrimination in education or employment.</li>
+  </ol>
+
+  <h3>B-5: Legal &amp; Institutional Framework</h3>
+  <p><em>FFI (Positive Indicators):</em></p>
+  <ol>
+    <li>Independence of judiciary from executive power.</li>
+    <li>Transparency of laws and judicial processes.</li>
+    <li>Functional separation of powers (checks and balances).</li>
+    <li>Equality before the law.</li>
+    <li>Constitutional protection of human rights.</li>
+    <li>Mechanisms for referendum and constitutional amendments.</li>
+    <li>Effectiveness of anti-corruption enforcement.</li>
+    <li>Independence and rights of lawyers.</li>
+    <li>Legal space and recognition for NGOs.</li>
+    <li>Independence of auditing and supervisory agencies.</li>
+  </ol>
+  <p><em>CSI (Cancerous Indicators):</em></p>
+  <ol>
+    <li>Political interference in judicial rulings.</li>
+    <li>Selective or arbitrary enforcement of law.</li>
+    <li>Existence of political prisoners or prisoners of conscience.</li>
+    <li>Lack of fair trial or public access to judicial decisions.</li>
+    <li>Weaponization of law for regime preservation.</li>
+  </ol>
+
+  <h3>B-6: Human Values &amp; Orientation</h3>
+  <p><em>FFI (Positive Indicators):</em></p>
+  <ol>
+    <li>Priority of freedom and human dignity.</li>
+    <li>Global happiness index ranking.</li>
+    <li>Protection of minority and marginalized groups.</li>
+    <li>Public participation in policymaking.</li>
+    <li>Creativity and innovation index.</li>
+    <li>Critical thinking in education.</li>
+    <li>Media focus on human rights and social well-being.</li>
+    <li>Vibrancy of charitable and philanthropic activities.</li>
+    <li>Inclusion of vulnerable populations.</li>
+    <li>Freedom to initiate social innovation projects.</li>
+  </ol>
+  <p><em>CSI (Cancerous Indicators):</em></p>
+  <ol>
+    <li>Forced value conformity and ideological indoctrination.</li>
+    <li>Extreme nationalism or chauvinism.</li>
+    <li>Collectivism overriding individual freedom.</li>
+    <li>Suppression of pluralism and diversity.</li>
+    <li>Instrumentalization of values for political or economic gain.</li>
+  </ol>
+
+  <h3>B-7: Immune System</h3>
+  <p><em>FFI (Positive Indicators):</em></p>
+  <ol>
+    <li>Transparency in crisis response (e.g., pandemics, disasters).</li>
+    <li>Speed and effectiveness of societal self-correction.</li>
+    <li>Resilience and autonomy of civil society.</li>
+    <li>Willingness to engage in global cooperation.</li>
+    <li>Dominance of science and rational discourse in policy.</li>
+    <li>Sensitivity to early signs of authoritarianism or systemic risks.</li>
+    <li>Open channels for public feedback and criticism.</li>
+    <li>Platforms’ capacity to counter misinformation.</li>
+    <li>Inclusion of interdisciplinary experts in decision-making.</li>
+    <li>Awareness of global systemic challenges (climate, inequality, AI).</li>
+  </ol>
+  <p><em>CSI (Cancerous Indicators):</em></p>
+  <ol>
+    <li>Suppression of NGOs and independent media.</li>
+    <li>Structural infiltration and control of foreign institutions.</li>
+    <li>Hostility towards other civilizations or cultures.</li>
+    <li>Refusal of external oversight or audits.</li>
+    <li>Concealment of crisis information.</li>
+  </ol>
+</section>
+
+<footer>
+  <p class="note">© 2025 by Kong Weicheng — released under CC0 1.0 (Public Domain Dedication). You may copy, modify, and distribute without restriction. Replace mirror links above with your actual URLs if available.</p>
+</footer>
+
+</main>
+</body>
+</html>

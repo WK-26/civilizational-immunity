@@ -1,0 +1,76 @@
+CHS Determines the Essence of Democracy vs. Authoritarianism
+Author: Kong Weicheng (孔维程)
+License: CC0 1.0 (Public Domain Dedication)
+
+
+1. CHS (Civilization Health Score) is the key metric for measuring the balance between functional civilization capacity and cancerous structural tendencies in individuals or groups.
+
+2. The political system of any nation or society is essentially the result of its citizens’ CHS distribution—not merely the outcome of constitutional texts or the will of a single leader.
+
+3. When the overall CHS > 0:
+- A high proportion of functional citizens
+- Strong public trust and institutional immunity
+- Society naturally evolves toward decentralization, checks and balances, diversity, and democratic governance
+
+4. When the overall CHS < 0:
+- A high proportion of low-function citizens
+- Weak public trust and fragile institutional immunity
+- Society naturally contracts into centralized, closed, and repressive systems
+
+5. Conclusion:
+- Democracy is not simply a voting mechanism; it is the natural product of a high-CHS social structure
+- Authoritarianism is not merely personal ambition; it is the natural convergence of a low-CHS social structure
+
+Formula:
+Political System = f( Average Citizen CHS ± Structural Amplification Coefficient )
+
+
+---
+
+Low-CHS Individuals → Structural Evolution Toward Authoritarianism
+
+Step 1: Behavioral Baseline of Low-CHS Individuals
+- Limited capacity for trust and cooperation
+- Reliance on coercion, hierarchy, and in-group loyalty
+- Preference for short-term survival over long-term collective gains
+
+Step 2: Social Aggregation Effects
+- When low-CHS individuals form a majority, public trust collapses
+- Voluntary cooperation is replaced by enforced compliance
+- Informal norms shift toward obedience and avoidance of risk
+
+Step 3: Institutional Consequences
+- Power centralizes to “guarantee order”
+- Information channels are controlled to minimize dissent
+- Institutions lose adaptive capacity, becoming rigid and self-protective
+
+Step 4: Structural Lock-in
+- Even if initial leadership changes, low-CHS social fabric recreates centralized structures
+- Democratic reforms fail without parallel CHS elevation
+- The system’s trajectory remains toward repression, not pluralism
+
+Summary Formula:
+Majority Low-CHS Population → Low Trust → Coercive Coordination → Centralization → Authoritarian Lock-in
+
+
+
+──────────────────────────────
+🌍 Civilization Corpus · 文明全集
+Author: Wei Cheng Kong (WK 孔维程)
+License: CC0 1.0 Universal (Public Domain Dedication)
+
+🔗 Permanent Mirrors · 永久镜像
+- GitHub Pages (Master Entry):
+  https://wk-26.github.io/Civilization-Axioms-and-Immune-System-/
+- GitHub Repository:
+  https://github.com/wk-26/Civilization-Axioms-and-Immune-System-
+- Internet Archive:
+  https://archive.org/details/a-new-civilization-for-humanity-cc-0
+- Zenodo (DOI, all versions):
+  https://doi.org/10.5281/zenodo.16980277
+
+For any existence to endure, it must recognize and embody the first eight axioms.  
+任何存在若要延续，必须承认并吸纳前八大公理。  
+Refusal leads to cancerization and destruction.  
+拒绝承认者，必然走向癌化与毁灭。
+──────────────────────────────
