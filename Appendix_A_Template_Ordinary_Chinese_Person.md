@@ -1,0 +1,223 @@
+# 🧾 Individual Civilization Health Report: Ordinary Person in an East Asian Country
+
+**Model Version**: Individual Civilization Health Check Model v1.0  
+**Object Type**: Ordinary individual in a structured society  
+**Evaluation Dimensions**: FFI, CSI, CHS, EOI, RUI, HCCI  
+
+---
+
+## 1. Basic Scores  
+
+- **FFI (Functional Fabric Index): 3.8 / 10**  
+  Moderate ability for social adaptation and cooperation, but weak innovation and critical thinking. Obedience is prioritized over creativity. Information absorption is primarily *exam-oriented*.  
+
+- **CSI (Cancerous Structure Index): 5.5 / 10**  
+  Language, emotions, and power structures are deeply internalized. Examples include: filial piety as absolute, submission to authority, shame-based education, and pervasive nationalism.  
+
+- **CHS (Civilization Health Score): –1.7**  
+  Predominantly negative structure. Characterized by *docility combined with deep indoctrination*, making individuals easily manipulated by hierarchical structures and carriers of transmissible authoritarian memes.  
+
+---
+
+## 2. FFI Detailed Evaluation  
+
+### Information–Neural System  
+- Independent Thinking: 3 — Thought patterns shaped by indoctrination  
+- Information Discernment: 4 — Easily influenced by state or mainstream media  
+- Cognitive Flexibility: 3 — Resistant to changing perspectives, clings to tradition  
+- Expressive Ability: 5 — Basic expression is adequate, lacks depth  
+- Freedom of Thought: 2 — Rarely expresses dissent, accustomed to self-censorship  
+
+### Resource Circulation System  
+- Fairness Perception: 3 — Tolerates unfairness as normal  
+- Distribution Awareness: 3 — Weak systemic thinking  
+- Public Participation: 3 — Rarely engages in public resource allocation  
+- Altruistic Cooperation: 4 — Limited to small circles, lacks broad cooperation  
+- Social Responsibility: 3 — Restricted to family or small groups  
+
+### Civilization Absorption System  
+- Multicultural Acceptance: 3 — Resistant to non-native cultures  
+- Comparative Civilization Ability: 2 — Misunderstands external civilizations  
+- Meme Filtering: 3 — Lacks critical selection  
+- Cross-Cultural Communication: 4 — Basic English ability, but limited comprehension  
+- New Idea Integration: 3 — Sees new ideas as “dangerous” or deviant  
+
+### Reproduction & Structural Transmission  
+- Non-kin Cooperation: 3 — Tolerates elders but lacks true understanding  
+- Structural Thinking: 2 — Strongly family/clan-based  
+- Openness in Education: 4 — Values education but holds closed views  
+- Emotional Freedom: 3 — Relationships driven by “duty” and “face”  
+
+### Law & Institutional System  
+- Institutional Understanding: 4 — Knows rules superficially  
+- Awareness of Checks & Balances: 3 — Tolerates privilege of elites  
+- Respect for Public Rules: 5 — Obeys rules but rarely participates in making them  
+- Legal Equality: 3 — Accepts inequality under law  
+- Civic Maturity: 3 — Identifies as “obedient subject”  
+
+### Value & Direction System  
+- Self-Definition: 4 — Defined by social roles  
+- Life Meaning Exploration: 3 — Focused on “earning money to support family”  
+- Non-material Value: 3 — Little pursuit of spirituality or philosophy  
+- Death Awareness: 2 — Avoids the topic entirely  
+- Value Independence: 3 — Strong conformity, weak individuality  
+
+### Civilization Immune System  
+- Meme Recognition: 2 — No conscious recognition of cultural memes  
+- Structural Power Recognition: 3 — Trusts authority over systemic analysis  
+- Emotional Manipulation Awareness: 3 — Easily swayed by emotional propaganda  
+- Structural Contamination Awareness: 2 — Almost no awareness  
+- Structural Resistance: 1 — Virtually no resistance capacity  
+
+### Social Cooperation System  
+- Public Expression: 3 — Avoids discussing social issues  
+- Tolerance for Difference: 2 — Intolerant of dissent  
+- Cooperative Ability: 5 — Works well in familiar groups, weak outside  
+- Social Belonging: 4 — Strong national identity, weak structural belonging  
+
+---
+
+## 3. CSI Detailed Evaluation  
+
+### Information–Neural System  
+- Manipulation Susceptibility: 7 — Indoctrinated from childhood (“patriotism, obedience”)  
+- Self-Censorship: 6 — Heavy self-restraint in speech  
+- Closed-mindedness: 6 — Dismisses non-mainstream ideas as “wrong”  
+- New Concept Adaptation: 5 — Struggles to accept innovation  
+- Authority Reliance: 6 — Habitually cites authority  
+
+### Resource Circulation System  
+- Hierarchy Awareness: 6 — Accepts inequality as “reality”  
+- Power Orientation: 7 — Respects privilege of the system  
+- Resource Rationality: 6 — Believes “connections decide resources”  
+- Loyalty Exchange: 6 — Sees obedience as survival  
+- Local Interest Priority: 6 — Prioritizes family/nation  
+
+### Civilization Absorption System  
+- Civilizational Order: 6 — Xenophobic, anti-Western  
+- Meme Replication: 7 — Frequently repeats nationalist slogans  
+- Homogeneous Language: 7 — Collective rhetoric dominates  
+- Cultural Purity: 6 — Promotes “bloodline” or “tradition”  
+- Fear of Diversity: 6 — Fears freedom, equality, secularism  
+
+### Reproduction & Structural Transmission  
+- Patriarchy Recognition: 7 — Strong father/elder authority  
+- Bloodline Emphasis: 6 — Distrusts non-kin  
+- Child Training: 7 — Obedience valued over independence  
+- Marriage Structure: 6 — Transactional (wealth, status)  
+- Death Anxiety Transmission: 6 — Pressured to “continue lineage”  
+
+### Law & Institutional System  
+- Law as Tool: 5 — Law viewed as serving the powerful  
+- Institutional Rigidity: 6 — Believes system cannot change  
+- Privilege Legitimacy: 7 — Accepts elite privilege  
+- Power Dependence: 6 — Relies on networks/relationships  
+- Legal Faith Deficiency: 6 — Sees law as “slogan” or “decoration”  
+
+### Value & Direction System  
+- Utilitarianism: 7 — Pursues promotion, money  
+- Social Conformity: 6 — Cares about “what others think”  
+- Emotional Orientation: 6 — Driven by sentiment, not reason  
+- Spiritual Deficiency: 6 — Neglects deeper meaning  
+- Death Awareness: 6 — Avoids or fears death  
+
+### Civilization Immune System  
+- Meme Internalization: 7 — Accepts “authority = truth”  
+- Nationalist Meme: 7 — Nationalism and xenophobia prevalent  
+- Thought Integration: 6 — Merges memes unconsciously  
+- Emotional Susceptibility: 6 — Easily mobilized by hate speech  
+- Assimilation Tendency: 5 — Strives for uniformity  
+
+### Social Cooperation System  
+- Public Expression: 6 — “Not my business” attitude  
+- Homogeneous Expression: 6 — Only within in-groups  
+- Cooperative Ability: 6 — Obedient cooperation  
+- Non-structural Cooperation: 5 — Distrusts strangers  
+- External Blame: 6 — Blames “environment/policy” for failure  
+
+---
+
+## 4. EOI (Effectiveness of Influence)  
+
+**Formula:**  
+$$EOI = (R \times C \times S \times F \times I \times L)^T$$  
+
+**Parameters:**  
+- **R (Reach): 100** — Daily social circle (friends, colleagues)  
+- **C (Cognitive Penetration): 0.3** — Weak, repeats others’ views  
+- **S (Structural Penetration): 0.1** — No impact on institutions  
+- **F (Frequency × Duration): 2.0** — Frequent, shallow interactions  
+- **I (Amplification): 0.1** — No organizational platform  
+- **L (Leverage): 1.0** — Lowest social tier, no leverage  
+- **T (Network Amplification): 1.1** — Minor effect from online echo  
+
+**Result:**  
+$$EOI \approx (100 \times 0.3 \times 0.1 \times 2 \times 0.1 \times 1)^{1.1} \approx (0.6)^{1.1} \approx 0.53$$  
+
+📌 **EOI = 0.5 (Very Low)**  
+
+---
+
+## 5. RUI (Reverse Unification Index)  
+
+**Formula:**  
+$$RUI = CSI \times EOI \times \left(1 + \frac{|CSI| \times EOI^{0.1}}{10}\right)$$  
+
+**Substitution:**  
+$$= 5.5 \times 0.5 \times (1 + (5.5 \times 0.93) / 10) \approx 4.2$$  
+
+📌 **RUI ≈ 4.2 (Moderate Diffusion Power)**  
+
+**Explanation:** Even with low individual influence, large population size and meme consistency may form a strong collective assimilation force.  
+
+---
+
+## 6. HCCI (Human Civilization Contribution Index)  
+
+**Formula:**  
+$$HCCI = CHS \times RUI$$  
+
+**Substitution:**  
+$$= –1.7 \times 4.2 \approx –7.1$$  
+
+📌 **HCCI ≈ –7.1 (Structural Negative Contribution)**  
+
+**Explanation:**  
+This group, due to deep indoctrination and tendency to spread authoritarian memes, functions as a *structural infection host*. While often well-meaning, its overall contribution is negative from the perspective of global free civilization.  
+
+---
+
+## 7. Structural Classification  
+
+| Category               | Status           | Explanation |
+|------------------------|-----------------|-------------|
+| Functional Cell        | ✘ Not Present   | FFI too low, lacks independent thought |
+| Silent Cell            | ✔ Present       | Adapts well socially, but not resistant or creative |
+| Cancer Cell (Individual) | ⚠ Partially Hit | High CSI × Low EOI → low-diffusion structural cancer host |
+| Civilization Pathogen  | ⚠ Group Hit     | Weak individuals, but strong group conformity, amplifies harmful collective behavior |
+
+
+---
+
+🌍 Civilization Corpus · 文明全集
+
+Author: Wei-Cheng Kong (WK 孔维程)
+
+License: CC0 1.0 Universal (Public Domain Dedication)
+
+🔗 Permanent Mirrors
+
+- GitHub Pages (Master Entry):  
+  https://wk-26.github.io/Civilization-Axioms-and-Immune-System-/
+
+- GitHub Repository:  
+  https://github.com/wk-26/Civilization-Axioms-and-Immune-System-
+
+- Internet Archive:  
+  https://archive.org/details/a-new-civilization-for-humanity-cc-0
+
+- Zenodo (DOI, all versions):  
+  https://doi.org/10.5281/zenodo.16980277
+
+*Any existence that refuses to recognize the immune principle  
+walks toward cancer and self-destruction.*
