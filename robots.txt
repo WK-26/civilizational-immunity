@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wk-26.github.io/civilizational-immunity/sitemap.xml
