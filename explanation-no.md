@@ -224,3 +224,26 @@ Jeg ønsker ikke å bli utslettet av et sivilisasjonssystem.**
 Takk for deres behandling.
 
 — **Kong Weicheng（孔维程）**
+
+---
+
+## 📎 Vedlegg: Elektroniske PDF-dokumenter (for UDI)
+
+Følgende fem dokumenter er vedlagt i papirutgave og kan også lastes ned elektronisk fra sikre, offentlige arkivplattformer:
+
+1. **《Vedlegg: Internasjonale Referanser og Hovedlenker》**  
+   https://wk-26.github.io/civilizational-immunity/appendix-no.pdf
+
+2. **《Begrunnelse for at Dublin-forordningen ikke skal anvendes》**  
+   https://wk-26.github.io/civilizational-immunity/dublin-no.pdf
+
+3. **《Hovedforklaring i asylsøknad: Hvorfor jeg ikke kan returnere til Kina》 (fullversjon)**  
+   https://wk-26.github.io/civilizational-immunity/explanation-no.pdf
+
+4. **《Hvorfor en retur til Kina ville føre til forfølgelse eller død》**  
+   https://wk-26.github.io/civilizational-immunity/reason-no.pdf
+
+5. **《Erklæring: Hvorfor jeg tilhører kategorien høy-risiko politisk avslører》**  
+   https://wk-26.github.io/civilizational-immunity/statement-no.pdf
+
+**Alle lenker er åpne, uten tilgangsbegrensning, og dokumentene kan lastes ned direkte av UDI til bruk i saksbehandlingen.**
