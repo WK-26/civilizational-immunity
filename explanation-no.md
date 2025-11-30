@@ -231,19 +231,19 @@ Takk for deres behandling.
 
 Følgende fem dokumenter er vedlagt i papirutgave og kan også lastes ned elektronisk fra sikre, offentlige arkivplattformer:
 
-1. **《Vedlegg: Internasjonale Referanser og Hovedlenker》**  
-   https://wk-26.github.io/civilizational-immunity/appendix-no.pdf
-
-2. **《Begrunnelse for at Dublin-forordningen ikke skal anvendes》**  
-   https://wk-26.github.io/civilizational-immunity/dublin-no.pdf
-
-3. **《Hovedforklaring i asylsøknad: Hvorfor jeg ikke kan returnere til Kina》 (fullversjon)**  
+1. **《Hovedforklaring i asylsøknad: Hvorfor jeg ikke kan returnere til Kina》**  
    https://wk-26.github.io/civilizational-immunity/explanation-no.pdf
-
-4. **《Hvorfor en retur til Kina ville føre til forfølgelse eller død》**  
+   
+2. **《Hvorfor en retur til Kina ville føre til forfølgelse eller død》**  
    https://wk-26.github.io/civilizational-immunity/reason-no.pdf
-
-5. **《Erklæring: Hvorfor jeg tilhører kategorien høy-risiko politisk avslører》**  
+   
+3. **《Erklæring: Hvorfor jeg tilhører kategorien høy-risiko politisk avslører》**  
    https://wk-26.github.io/civilizational-immunity/statement-no.pdf
+
+4. **《Begrunnelse for at Dublin-forordningen ikke skal anvendes》**  
+   https://wk-26.github.io/civilizational-immunity/dublin-no.pdf
+   
+5. **《Vedlegg: Internasjonale Referanser og Hovedlenker》**  
+   https://wk-26.github.io/civilizational-immunity/appendix-no.pdf
 
 **Alle lenker er åpne, uten tilgangsbegrensning, og dokumentene kan lastes ned direkte av UDI til bruk i saksbehandlingen.**
